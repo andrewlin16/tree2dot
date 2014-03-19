@@ -19,7 +19,9 @@ The output of tree2dot can also be piped directly into graphviz.
 Example usage: `tree2dot < examples/test.txt | dot -Tsvg > examples/test.svg`
 
 This will take the tree in examples/test.txt, pipe the resulting DOT to the dot
-program, and output a SVG file to examples/test.svg.
+program, and output a SVG file to examples/test.svg. You will need the graphviz
+package installed for this to run. On Debian/Ubuntu-based systems, this can be
+done by running `apt-get install graphviz`.
 
 License
 -------
