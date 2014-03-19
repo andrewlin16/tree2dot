@@ -1,0 +1,9 @@
+(S
+	(NP
+		(Det "The")
+		(N "ice")
+	)
+	(VP
+		(V "melted.")
+	)
+)

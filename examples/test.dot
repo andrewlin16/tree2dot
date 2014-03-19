@@ -1,0 +1,17 @@
+// generated with tree2dot
+graph tree {
+node [shape=plaintext];
+aac	[label="1"];
+aab -- aac;
+aad	[label="3"];
+aab -- aad;
+aab	[label="2"];
+aaa -- aab;
+aaf	[label="5"];
+aae -- aaf;
+aag	[label="7"];
+aae -- aag;
+aae	[label="6"];
+aaa -- aae;
+aaa	[label="4"];
+}

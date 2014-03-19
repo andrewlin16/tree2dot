@@ -1,0 +1,21 @@
+// generated with tree2dot
+graph tree {
+node [shape=plaintext];
+aad	[label="The"];
+aac -- aad;
+aac	[label="Det"];
+aab -- aac;
+aaf	[label="ice"];
+aae -- aaf;
+aae	[label="N"];
+aab -- aae;
+aab	[label="NP"];
+aaa -- aab;
+aai	[label="melted."];
+aah -- aai;
+aah	[label="V"];
+aag -- aah;
+aag	[label="VP"];
+aaa -- aag;
+aaa	[label="S"];
+}
