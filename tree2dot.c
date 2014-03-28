@@ -11,6 +11,7 @@ typedef struct _node {
 	struct _node *prev;
 } node;
 
+int peekchar();
 void skip_whitespace();
 void inc_next_id();
 int contains(const char*, int);
@@ -90,10 +91,27 @@ int main() {
 	return 0;
 }
 
+int peekchar() {
+	int c = getchar();
+	ungetc(c, stdin);
+	return c;
+}
+
 void skip_whitespace() {
 	char c;
-	while ((c = getchar()) != EOF &&
-			(c == ' ' || c == '\t' || c == '\n'));
+	int loop = 1;
+	
+	while (loop) {
+		while ((c = getchar()) != EOF &&
+				(c == ' ' || c == '\t' || c == '\n'));
+		
+		if (c == '/' && peekchar() == '/') {
+			while ((c = getchar()) != EOF && c != '\n');
+		} else {
+			loop = 0;
+		}
+	}
+	
 	ungetc(c, stdin);
 }
 
