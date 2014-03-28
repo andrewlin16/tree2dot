@@ -1,9 +1,12 @@
-(S
-	(NP
-		(Det "The")
-		(N "ice")
+// Example adapted from exercise 8d in Ch 4. from the book:
+// Fromkin, Rodman, and Hyams, An Introduction to Language, 9th edition.
+
+(S						// Sentence
+	(NP					// Noun Phrase
+		(Det "The")		// Determiner
+		(N "ice")		// Noun
 	)
-	(VP
-		(V "melted.")
+	(VP					// Verb Phrase
+		(V "melted.")	// Verb
 	)
 )

@@ -1,3 +1,6 @@
+// Example adapted from Gordon Novak Jr.'s trivb.sample program file
+// ftp://ftp.cs.utexas.edu/pub/novak/cs375/trivb.sample
+
 (program graph1 (progn output)
                 (progn (:= lim 7)
                        (progn (:= i 0)
