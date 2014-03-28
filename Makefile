@@ -1,7 +1,12 @@
+CC = gcc
+CFLAGS = -g -Wall
+
 EXAMPLES = examples/ling_simple examples/test examples/trivb_tree
 
-tree2dot:
-	gcc -o tree2dot tree2dot.c
+default: tree2dot
+
+tree2dot: tree2dot.c
+	$(CC) $(CFLAGS) -o tree2dot tree2dot.c
 
 %.dot: tree2dot
 	./tree2dot < $(addsuffix .txt, $(basename $@)) > $@
