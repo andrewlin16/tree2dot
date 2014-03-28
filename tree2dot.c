@@ -37,6 +37,8 @@ int main() {
 	puts("graph tree {");
 	puts("node [shape=plaintext];");
 	
+	skip_whitespace();
+	
 	/* start reading and outputting tree */
 	while (go) {
 		int c = getchar();
